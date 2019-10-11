@@ -25,7 +25,7 @@ $possibiliRisposte = array(
 );
 
 if(strcmp($text, "blasta") === 0) {
-	$myText = "hai scritto blasta";
+	$myText = $possibiliRisposte[0];
 }
 
 header("Content-Type: application/json");

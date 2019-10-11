@@ -24,7 +24,7 @@ $possibiliRisposte = array(
 	"Ciao Jooseppe Fedina"
 );
 
-if(strcmp($text, "blasta") === 0) {
+if(strcmp($text, "blasta") === 0 || strcmp($text, "Giuseppe")) {
 	$myText = $possibiliRisposte[rand(0, 3)];
 }
 

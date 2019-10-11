@@ -25,7 +25,7 @@ $possibiliRisposte = array(
 );
 
 if(strcmp($text, "blasta") === 0) {
-	$myText = $possibiliRisposte[0];
+	$myText = $possibiliRisposte[rand(0, 3)];
 }
 
 header("Content-Type: application/json");

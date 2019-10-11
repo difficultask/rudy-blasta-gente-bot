@@ -24,7 +24,9 @@ $possibiliRisposte = array(
 	"Ciao Jooseppe Fedina"
 );
 
-
+if(strcmp($text, "blasta") === 0) {
+	$myText = "hai scritto blasta";
+}
 
 header("Content-Type: application/json");
 $parameters = array('chat_id' => $chatId, "text" => $myText);

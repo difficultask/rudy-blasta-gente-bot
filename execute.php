@@ -16,19 +16,9 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
 
-$myText = "ah?";
-$possibiliRisposte = array(
-	"Sei paragonabile a Messimiliano Boia",
-	"Fatti affiancare da qualcuno che sappia usare questi strumenti",
-	"Sei un incompetente",
-	"Ciao Jooseppe Fedina"
-);
 
-if(strcmp($text, "blasta") === 0) {
-	$myText = var_dump($possibiliRisposte[rand(0, 3]);
-}
 
 header("Content-Type: application/json");
-$parameters = array('chat_id' => $chatId, "text" => $myText);
+$parameters = array('chat_id' => $chatId, "text" => $text);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
